@@ -1,0 +1,135 @@
+/* ========================================
+   APP STYLES
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.app-header {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px 20px;
+  margin-bottom: 30px;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* ========================================
+   EXERCISE SELECTOR
+======================================== */
+
+.exercise-selector {
+  max-width: 1400px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.exercise-selector label {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.exercise-selector select {
+  flex: 1;
+  max-width: 500px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.exercise-selector select:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.exercise-selector select:focus {
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.app-footer {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 3px solid #667eea;
+}
+
+.app-footer p {
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+.app-footer strong {
+  color: #2c3e50;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .header-content p {
+    font-size: 0.95rem;
+  }
+  
+  .exercise-selector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .exercise-selector select {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,475 @@
+/* ========================================
+   CODE EDITOR STYLES
+======================================== */
+
+.code-editor-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.exercise-header {
+  background: #2c3e50;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.exercise-info h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+.exercise-meta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge-beginner {
+  background: #27ae60;
+  color: white;
+}
+
+.badge-intermediate {
+  background: #f39c12;
+  color: white;
+}
+
+.badge-advanced {
+  background: #e74c3c;
+  color: white;
+}
+
+.points {
+  font-size: 0.9rem;
+  color: #f1c40f;
+  font-weight: 600;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.exercise-description {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.exercise-description h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.exercise-description pre {
+  white-space: pre-wrap;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.editor-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* ========================================
+   EDITOR SECTION
+======================================== */
+
+.editor-section {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.editor-header {
+  background: #34495e;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.language-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #2c3e50;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.editor-actions {
+  padding: 15px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-execute {
+  flex: 1;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #27ae60, #229954);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-execute:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.btn-execute:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-hint {
+  padding: 12px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-hint:hover {
+  background: #2980b9;
+}
+
+/* ========================================
+   HINTS
+======================================== */
+
+.hints-section {
+  padding: 20px;
+  background: #ecf0f1;
+  border-top: 2px solid #bdc3c7;
+}
+
+.hints-section h4 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.hint-item {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 4px solid #3498db;
+}
+
+.hint-item strong {
+  color: #2c3e50;
+}
+
+.btn-more-hints {
+  padding: 8px 16px;
+  background: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-more-hints:hover {
+  background: #7f8c8d;
+}
+
+/* ========================================
+   RESULTS SECTION
+======================================== */
+
+.results-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.results-section h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px 20px;
+  color: #7f8c8d;
+}
+
+.no-results .tip {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #95a5a6;
+}
+
+/* ========================================
+   SCORE CARD
+======================================== */
+
+.score-card {
+  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.score-card.success {
+  background: linear-gradient(135deg, #27ae60, #229954);
+  color: white;
+}
+
+.score-card.partial {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.score-label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.score-details {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.points-earned {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 8px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* ========================================
+   TEST RESULTS
+======================================== */
+
+.test-results {
+  margin-top: 20px;
+}
+
+.test-results h4 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.test-item {
+  background: #ecf0f1;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-left: 4px solid #95a5a6;
+}
+
+.test-item.passed {
+  border-left-color: #27ae60;
+  background: #d5f4e6;
+}
+
+.test-item.failed {
+  border-left-color: #e74c3c;
+  background: #fadbd8;
+}
+
+.test-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.test-status {
+  font-size: 1.2rem;
+}
+
+.test-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.test-details {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.test-detail {
+  margin-bottom: 8px;
+}
+
+.test-detail strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.test-detail code {
+  display: block;
+  background: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+.test-hidden {
+  padding: 10px;
+  background: rgba(0,0,0,0.05);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  text-align: center;
+}
+
+.test-error {
+  background: #fadbd8;
+  padding: 10px;
+  border-radius: 4px;
+  color: #c0392b;
+  font-size: 0.9rem;
+}
+
+/* ========================================
+   ERROR
+======================================== */
+
+.error-result {
+  background: #fadbd8;
+  border: 2px solid #e74c3c;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.error-result h4 {
+  margin-top: 0;
+  color: #c0392b;
+}
+
+.error-result p {
+  color: #c0392b;
+  margin: 0;
+}
+
+/* ========================================
+   LOADING
+======================================== */
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ecf0f1;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ========================================
+   SUCCESS ANIMATION
+======================================== */
+
+.code-editor-container.celebrate {
+  animation: celebrate 2s ease;
+}
+
+@keyframes celebrate {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.02); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.02); }
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1024px) {
+  .editor-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .code-editor-container {
+    padding: 10px;
+  }
+  
+  .exercise-header {
+    padding: 15px;
+  }
+  
+  .exercise-info h2 {
+    font-size: 1.4rem;
+  }
+  
+  .score-value {
+    font-size: 2.5rem;
+  }
+}
