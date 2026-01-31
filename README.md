@@ -32,19 +32,19 @@ CSS moderno
 
 📸 Screenshots
 ### Interface Principal
-   ![Interface](docs/screenshots/interface.png)
+   ![Interface Principal](docs/screenshots/interface.png)
 
 ### Interface Responsiva - Dispositivos Móveis
-  ![Interface](docs/screenshots/interface-Responsiva-dispositivo-movel.png)  
+  ![Interface Responsiva - Dispositivos Móveis](docs/screenshots/interface-Responsiva-dispositivo-movel.png)  
 
 ### Seleção de Exercícios
-   ![Interface](docs/screenshots/selecao-exercicios.png)  
+   ![Seleção de Exercícios](docs/screenshots/selecao-exercicios.png)  
 
 ### Mensagem de Erro de Resolução
-   ![Interface](docs/screenshots/mensagem-erro.png)     
+   ![Mensagem de Erro de Resolução](docs/screenshots/mensagem-erro.png)     
 
 ### Mensagem de Acerto de Resolução
-   ![Interface](docs/screenshots/mensagem-acerto.png)        
+   ![Mensagem de Acerto de Resolução](docs/screenshots/mensagem-acerto.png)        
 
 
 📦 Estrutura do Projeto
@@ -367,3 +367,4 @@ GitHub: @DiegoRapichan
 MIT - Livre para usar e modificar!
 
 Desenvolvido por Diego Rapichan
+
