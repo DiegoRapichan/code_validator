@@ -343,7 +343,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para de
 
 ## 🙏 Agradecimentos
 
-- [Monaco Editor](https://microsoft.github.io/monaco-editor/) - Editor de código
 - [React](https://reactjs.org) - Biblioteca UI
 - [Node.js](https://nodejs.org) - Runtime backend
 
@@ -354,3 +353,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para de
 ---
 
 **Desenvolvido por Diego Rapichan**
+
