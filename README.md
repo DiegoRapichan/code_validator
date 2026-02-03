@@ -1,47 +1,293 @@
-# 🔍 Code Validator
+# 🛠️ Code Validator
 
-Plataforma para validação automática de código com suporte a JavaScript e Python.
+Plataforma web moderna para validação automática de código com suporte a **JavaScript** e **Python**, oferecendo feedback em tempo real e interface intuitiva.
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Monaco Editor](https://img.shields.io/badge/Monaco_Editor-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
+[![Monaco Editor](https://img.shields.io/badge/Monaco_Editor-2C2255?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://microsoft.github.io/monaco-editor/)
 
-## 📋 Sobre
+> Editor de código online com validação automática, syntax highlighting e suporte multi-linguagem.
 
-Sistema completo de validação de código com editor integrado (Monaco) e execução segura em sandbox...
+---
 
+## 🎯 Sobre o Projeto
 
-🎯 Sobre o Projeto
-Sistema profissional de validação de código que permite:
+**Code Validator** é uma plataforma web que permite aos desenvolvedores escrever, validar e testar código diretamente no navegador, sem necessidade de instalar ferramentas localmente.
 
-✅ Executar código Python e JavaScript com segurança
-✅ Validar automaticamente com test cases pré-definidos
-✅ Testes visíveis e ocultos (evita hardcode)
-✅ Feedback imediato com score e detalhes
-✅ Interface moderna com editor Monaco
-✅ Sistema de pontos e gamificação
+### Por que usar?
 
-Perfeito para: Plataformas de ensino, desafios de programação, bootcamps
+- ✅ **Validação em tempo real** - Feedback instantâneo sobre erros de sintaxe
+- ✅ **Multi-linguagem** - Suporte para JavaScript e Python (mais linguagens em breve)
+- ✅ **Interface profissional** - Editor Monaco (mesmo do VS Code)
+- ✅ **Sem instalação** - Roda 100% no navegador
+- ✅ **Syntax highlighting** - Cores e indentação automáticas
+- ✅ **Ideal para aprendizado** - Perfeito para estudantes testarem código rapidamente
 
-🚀 Tecnologias
-Backend:
+---
 
-Node.js + Express
-VM2 (sandbox JavaScript)
-child_process (Python isolado)
-CORS, Morgan
+## ✨ Funcionalidades
 
-Frontend:
+### 📝 Editor de Código
+- ✅ **Monaco Editor integrado** (engine do VS Code)
+- ✅ **Syntax highlighting** avançado
+- ✅ **Auto-complete** e sugestões inteligentes
+- ✅ **Indentação automática**
+- ✅ **Múltiplas linguagens** (JavaScript, Python)
+- ✅ **Temas** (claro e escuro)
 
-React 18
-Monaco Editor (editor do VS Code!)
-Axios
-CSS moderno
+### 🔍 Validação
+- ✅ **Validação em tempo real**
+- ✅ **Detecção de erros de sintaxe**
+- ✅ **Mensagens de erro claras**
+- ✅ **Sugestões de correção**
+- ✅ **Análise estática de código**
 
-📸 Screenshots
+### 🎨 Interface
+- ✅ **Design moderno e responsivo**
+- ✅ **Painel de resultados**
+- ✅ **Seletor de linguagem**
+- ✅ **Botões de ação rápida**
+- ✅ **Feedback visual de status**
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+- **React** - Biblioteca UI
+- **Monaco Editor** - Editor de código (VS Code)
+- **Tailwind CSS** - Estilização moderna
+- **Vite** - Build tool rápido
+
+### Backend
+- **Node.js** - Runtime JavaScript
+- **Express** - Framework web
+- **Child Process** - Execução de código Python
+- **ESLint** - Validação JavaScript
+
+### Ferramentas
+- **Axios** - Cliente HTTP
+- **React Icons** - Ícones
+- **CORS** - Controle de acesso
+
+---
+
+## 📦 Instalação e Uso
+
+### Pré-requisitos
+
+- Node.js 18+
+- Python 3.8+ (para validação Python)
+- npm ou yarn
+
+### Backend
+
+1. **Clone o repositório**
+```bash
+git clone https://github.com/DiegoRapichan/code_validator.git
+cd code_validator/backend
+```
+
+2. **Instale dependências**
+```bash
+npm install
+```
+
+3. **Configure variáveis de ambiente**
+```bash
+cp .env.example .env
+```
+
+`.env`:
+```env
+PORT=3001
+NODE_ENV=development
+ALLOWED_ORIGINS=http://localhost:5173
+```
+
+4. **Inicie o servidor**
+```bash
+npm run dev
+```
+
+Backend rodando em `http://localhost:3001`
+
+---
+
+### Frontend
+
+1. **Entre na pasta frontend**
+```bash
+cd ../frontend
+```
+
+2. **Instale dependências**
+```bash
+npm install
+```
+
+3. **Configure variáveis de ambiente**
+```bash
+cp .env.example .env
+```
+
+`.env`:
+```env
+VITE_API_URL=http://localhost:3001
+```
+
+4. **Inicie o app**
+```bash
+npm run dev
+```
+
+Frontend rodando em `http://localhost:5173`
+
+---
+
+## 🎮 Como Usar
+
+### Passo 1: Selecione a Linguagem
+Escolha entre **JavaScript** ou **Python** no seletor superior.
+
+### Passo 2: Escreva o Código
+Digite ou cole seu código no editor Monaco.
+
+**Exemplo JavaScript:**
+```javascript
+function soma(a, b) {
+  return a + b;
+}
+
+console.log(soma(5, 3)); // 8
+```
+
+**Exemplo Python:**
+```python
+def soma(a, b):
+    return a + b
+
+print(soma(5, 3))  # 8
+```
+
+### Passo 3: Valide
+Clique em **"Validar Código"** e veja o resultado:
+
+- ✅ **Código válido** - Mensagem de sucesso em verde
+- ❌ **Código inválido** - Erros detalhados em vermelho
+
+---
+
+## 📚 API Endpoints
+
+### Base URL
+```
+http://localhost:3001/api
+```
+
+### Validar JavaScript
+```http
+POST /api/validate/javascript
+Content-Type: application/json
+
+{
+  "code": "function soma(a, b) { return a + b; }"
+}
+```
+
+**Resposta (200):**
+```json
+{
+  "valid": true,
+  "message": "Código JavaScript válido!",
+  "errors": []
+}
+```
+
+**Resposta (400):**
+```json
+{
+  "valid": false,
+  "message": "Erros encontrados no código",
+  "errors": [
+    {
+      "line": 1,
+      "column": 10,
+      "message": "Unexpected token }"
+    }
+  ]
+}
+```
+
+### Validar Python
+```http
+POST /api/validate/python
+Content-Type: application/json
+
+{
+  "code": "def soma(a, b):\n    return a + b"
+}
+```
+
+---
+
+## 🗂️ Estrutura do Projeto
+
+```
+code_validator/
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   └── validatorController.js
+│   │   ├── routes/
+│   │   │   └── validatorRoutes.js
+│   │   ├── utils/
+│   │   │   ├── jsValidator.js
+│   │   │   └── pyValidator.js
+│   │   ├── app.js
+│   │   └── server.js
+│   ├── .env.example
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── CodeEditor.jsx
+│   │   │   ├── LanguageSelector.jsx
+│   │   │   └── ResultPanel.jsx
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .env.example
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## 🚀 Roadmap (Próximas Features)
+
+### Em Desenvolvimento
+- [ ] Suporte a mais linguagens (TypeScript, PHP, Ruby)
+- [ ] Execução de código (não só validação)
+- [ ] Salvar snippets de código
+- [ ] Compartilhamento de código via link
+- [ ] Histórico de validações
+
+### Planejado
+- [ ] Autenticação de usuários
+- [ ] Biblioteca de snippets pública
+- [ ] Temas customizáveis
+- [ ] Integração com GitHub
+- [ ] API pública para desenvolvedores
+- [ ] Suporte a testes unitários
+
+---
+
+## 🎨 Screenshots
+
 ### Interface Principal
    ![Interface Principal](docs/screenshots/interface.png)
 
@@ -58,325 +304,53 @@ CSS moderno
    ![Mensagem de Acerto de Resolução](docs/screenshots/mensagem-acerto.png)        
 
 
-📦 Estrutura do Projeto
-code-validator/
-├── backend/
-│   ├── server.js                      ← Servidor Express
-│   ├── package.json
-│   ├── .env
-│   ├── services/
-│   │   └── code-execution.service.js  ← Executa e valida código
-│   ├── data/
-│   │   └── exercises-with-tests.js    ← Banco de exercícios
-│   └── routes/
-│       └── exercises.routes.js        ← API REST
-│
-└── frontend/
-    ├── package.json
-    ├── src/
-    │   ├── App.jsx                    ← Aplicação principal
-    │   ├── App.css
-    │   └── components/
-    │       ├── CodeEditor.jsx         ← Editor de código
-    │       └── CodeEditor.css
-    └── public/
-
-🛠️ Instalação
-1. Clone/Baixe os Arquivos
-Organize assim:
-seu-projeto/
-├── backend/
-│   ├── server.js
-│   ├── package.json
-│   ├── .env
-│   ├── services/
-│   │   └── code-execution.service.js
-│   ├── data/
-│   │   └── exercises-with-tests.js
-│   └── routes/
-│       └── exercises.routes.js
-│
-└── frontend/
-    ├── package.json
-    ├── src/
-    │   ├── App.jsx
-    │   ├── App.css
-    │   └── components/
-    │       ├── CodeEditor.jsx
-    │       └── CodeEditor.css
-    └── public/
-        └── index.html
-
-2. Instalar Backend
-bashcd backend
-npm install
-Dependências instaladas:
-
-express
-cors
-dotenv
-vm2
-morgan
-nodemon (dev)
-
-
-3. Instalar Frontend
-bashcd frontend
-npm install
-Dependências instaladas:
-
-react
-react-dom
-axios
-@monaco-editor/react
-react-scripts
-
-
-4. Verificar Python
-O sistema precisa do Python 3 instalado:
-bashpython3 --version
-Se não tiver, instale:
-
-Windows: https://python.org/downloads
-Linux: sudo apt install python3
-Mac: brew install python3
-
-
-🚀 Como Rodar
-Terminal 1 - Backend:
-bashcd backend
-npm run dev
-Verá:
-╔════════════════════════════════════════════════╗
-║     🚀  CODE VALIDATOR API                     ║
-║     ✅  Servidor rodando na porta 3001         ║
-║     📡  http://localhost:3001                  ║
-╚════════════════════════════════════════════════╝
+---
 
-Terminal 2 - Frontend:
-bashcd frontend
-npm start
-Abrirá automaticamente em: http://localhost:3000
+## 🤝 Contribuindo
 
-💡 Como Usar
-1. Escolha um Exercício
-No dropdown, selecione:
+Contribuições são muito bem-vindas! Para contribuir:
 
-Python: Soma de Dois Números
-Python: Média de Três Notas
-Python: Par ou Ímpar
-JavaScript: Dobro de um Número
-JavaScript: Encontrar o Maior
-JavaScript: Contar Vogais
+1. Fork o projeto
+2. Crie uma branch (`git checkout -b feature/NovaFeature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona NovaFeature'`)
+4. Push para a branch (`git push origin feature/NovaFeature`)
+5. Abra um Pull Request
 
+### Ideias de Contribuição
+- Adicionar suporte a novas linguagens
+- Melhorar mensagens de erro
+- Otimizar performance
+- Adicionar testes automatizados
+- Melhorar UI/UX
 
-2. Escreva o Código
-Use o editor Monaco (mesmo do VS Code):
+---
 
-Syntax highlighting
-Autocomplete
-Suporte Python e JavaScript
+## 📝 Licença
 
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-3. Execute
-Clique em "▶ Executar Código"
-O sistema irá:
+---
 
-Enviar código para o backend
-Executar com cada test case
-Comparar outputs
-Calcular score
-Mostrar resultados detalhados
+## 👨‍💻 Autor
 
+**Diego Rapichan**
 
-4. Veja os Resultados
-📊 Resultados
-┌─────────────────────────┐
-│   Score: 100%           │
-│   🎉 Parabéns!          │
-│   4 de 4 testes         │
-│   +10 pontos! ⭐        │
-└─────────────────────────┘
+- GitHub: [@DiegoRapichan](https://github.com/DiegoRapichan)
+- LinkedIn: [Diego Rapichan](https://www.linkedin.com/in/diego-rapichan)
+- Email: direrapichan@gmail.com
 
-Testes:
-✅ Teste 1: Números positivos pequenos
-   Input: 3, 5
-   Esperado: 8
-   Recebido: 8
+---
 
-✅ Teste 2: Números positivos grandes
-   Input: 1000, 2000
-   Esperado: 3000
-   Recebido: 3000
+## 🙏 Agradecimentos
 
-✅ Teste 3: Com número negativo
-   🔒 Teste oculto
+- [Monaco Editor](https://microsoft.github.io/monaco-editor/) - Editor de código
+- [React](https://reactjs.org) - Biblioteca UI
+- [Node.js](https://nodejs.org) - Runtime backend
 
-✅ Teste 4: Zeros
-   🔒 Teste oculto
+---
 
-🎓 Exercícios Disponíveis
-Python:
+⭐ **Se este projeto foi útil, considere dar uma estrela!**
 
-Soma de Dois Números (Iniciante - 10pts)
+---
 
-Ler dois números e somar
-
-
-Média de Três Notas (Iniciante - 15pts)
-
-Calcular média com 2 casas decimais
-
-
-Par ou Ímpar (Iniciante - 10pts)
-
-Verificar se número é par ou ímpar
-
-
-
-
-JavaScript:
-
-Dobro de um Número (Iniciante - 10pts)
-
-Função que retorna dobro
-
-
-Encontrar o Maior (Intermediário - 20pts)
-
-Encontrar maior número em array
-
-
-Contar Vogais (Intermediário - 20pts)
-
-Contar vogais em string
-
-
-
-
-🔧 API Endpoints
-GET /api/exercises
-Lista todos os exercícios
-bashcurl http://localhost:3001/api/exercises
-
-GET /api/exercises/:id
-Busca exercício específico
-bashcurl http://localhost:3001/api/exercises/python_001
-
-POST /api/exercises/validate-code
-Valida código do usuário
-bashcurl -X POST http://localhost:3001/api/exercises/validate-code \
-  -H "Content-Type: application/json" \
-  -d '{
-    "userId": "user123",
-    "exerciseId": "python_001",
-    "code": "a = int(input())\nb = int(input())\nprint(a + b)",
-    "language": "python"
-  }'
-Resposta:
-json{
-  "success": true,
-  "score": 100,
-  "allPassed": true,
-  "passedTests": 4,
-  "totalTests": 4,
-  "results": [...],
-  "points": 10
-}
-
-🔒 Segurança
-Sandbox JavaScript (VM2):
-
-✅ Processo isolado
-✅ Sem acesso a require()
-✅ Sem acesso ao filesystem
-✅ Timeout de 5 segundos
-✅ Limite de memória
-
-Python (child_process):
-
-✅ Processo separado
-✅ Timeout de 5 segundos
-✅ Kill automático
-✅ Captura de stderr
-
-Prevenções:
-
-❌ Loops infinitos → timeout
-❌ Uso excessivo de memória → limite
-❌ Acesso ao sistema → sandbox
-❌ Network calls → não disponível
-
-
-📚 Adicionar Novos Exercícios
-Edite: backend/data/exercises-with-tests.js
-javascript{
-  id: 'python_004',
-  title: 'Novo Exercício',
-  description: 'Descrição...',
-  difficulty: 'beginner', // beginner | intermediate | advanced
-  course: 'PYTHON',
-  starterCode: `# Código inicial`,
-  testCases: [
-    {
-      name: 'Teste 1',
-      input: '5',
-      expectedOutput: '10',
-      hidden: false // true = teste oculto
-    }
-  ],
-  hints: ['Dica 1', 'Dica 2'],
-  points: 10
-}
-
-🎨 Personalização
-Cores do Tema:
-Edite frontend/src/App.css linha 11:
-cssbackground: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-Timeout de Execução:
-Edite backend/.env:
-CODE_TIMEOUT=5000
-
-🚀 Deploy
-Backend (Heroku/Railway):
-bash# Procfile
-web: node server.js
-Frontend (Vercel/Netlify):
-bashnpm run build
-# Deploy pasta build/
-Importante: Atualizar API_URL no CodeEditor.jsx com URL do backend em produção
-
-🐛 Troubleshooting
-Erro: Python não encontrado
-bash# Windows: Adiciona Python ao PATH
-# Linux: sudo apt install python3
-# Mac: brew install python3
-Erro: CORS
-Verifique se backend está rodando na porta 3001
-Erro: VM2
-bashcd backend
-npm install vm2 --save
-
-💡 Melhorias Futuras
-
- Suporte para mais linguagens (Java, C++, C#)
- Sistema de ranking/leaderboard
- Análise de complexidade (tempo/espaço)
- Comparação com soluções da comunidade
- Integração com GitHub
- Sistema de badges
- Editor colaborativo (múltiplos usuários)
-
-
-👤 Autor
-Diego Rapichan
-
-GitHub: @DiegoRapichan
-
-
-📝 Licença
-MIT - Livre para usar e modificar!
-
-Desenvolvido por Diego Rapichan
-
-
+**Desenvolvido por Diego Rapichan**
